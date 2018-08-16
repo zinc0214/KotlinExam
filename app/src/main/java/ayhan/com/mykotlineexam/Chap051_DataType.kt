@@ -12,7 +12,7 @@ import android.util.Log
 
 
 // 데이터타입 - 기초데이터타입
-class Chap051 : AppCompatActivity() {
+class Chap051_DataType : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

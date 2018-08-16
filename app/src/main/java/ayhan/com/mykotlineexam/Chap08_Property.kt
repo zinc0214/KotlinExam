@@ -8,9 +8,9 @@ import kotlin.properties.Delegates
  * Created by HanAYeon on 2018. 7. 6..
  */
 
-// Chap08 : 프로퍼티
+// Chap08_Property : 프로퍼티
 
-class Chap08 : AppCompatActivity() {
+class Chap08_Property : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

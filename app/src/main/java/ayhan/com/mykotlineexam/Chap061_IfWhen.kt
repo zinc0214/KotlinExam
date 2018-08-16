@@ -11,7 +11,7 @@ import android.util.Log
 // 흐름 제어 구문과 연산자 - 6.1 조건문
 
 
-class Chap061 : AppCompatActivity() {
+class Chap061_IfWhen : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

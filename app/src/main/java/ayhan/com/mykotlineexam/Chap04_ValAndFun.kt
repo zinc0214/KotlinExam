@@ -10,7 +10,7 @@ import android.util.Log
 
 // 변수와 함수
 
-class Chap04 : AppCompatActivity() {
+class Chap04_ValAndFun : AppCompatActivity() {
 
     val data1: Int = 10
     val data2 = 20  // value

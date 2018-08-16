@@ -14,7 +14,7 @@ import java.util.Collections.*
 
 // 흐름 제어 구문과 연산자 - 6.3 연산자
 
-class Chap063 : AppCompatActivity() {
+class Chap063_Operator : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

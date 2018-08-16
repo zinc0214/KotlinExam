@@ -11,7 +11,7 @@ import android.util.Log
 
 // 07. 클래스
 
-class Chap07 : AppCompatActivity() {
+class Chap07_Class : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

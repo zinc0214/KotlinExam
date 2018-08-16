@@ -12,7 +12,7 @@ import java.util.*
 
 // 흐름 제어 구문과 연산자 - 6.2 반복문
 
-class Chap062 : AppCompatActivity() {
+class Chap062_Loop : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

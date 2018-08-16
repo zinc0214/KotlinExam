@@ -8,9 +8,9 @@ import android.support.v7.app.AppCompatActivity
  */
 
 
-// Chap09 : 상속
+// Chap09_Extends : 상속
 
-class Chap09 : AppCompatActivity() {
+class Chap09_Extends : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -157,6 +157,53 @@ class Chap09 : AppCompatActivity() {
         if(obj is MyClass2) obj.fun2()
     }
 
+
+    //as를 이용한 캐스팅 ( 형식 : 객체 as 타입) : 이건 상위타입 -> 하위타입 -> 상위타입 으로의 캐스팅 할 때만 사용가능하다.
+    open class Super3 {
+        fun superFun() {
+            println("superFun()...")
+        }
+    }
+
+    class Sub13: Super3() {
+        fun subFun1() {
+            println("subFun1()...")
+        }
+    }
+
+    class Sub23: Super3() {
+        fun subFun2() {
+            println("subFun2()...")
+        }
+    }
+
+
+    // null 허용객체를 as를 통해서 캐스팅 하기 위해서는
+    val obj7: Super3? = Sub23()
+    val obj8:Sub23 = obj7 as Sub23
+
+    val obj9: Super3? = null
+    val obj10: Sub23 = obj9 as Sub23 // 런타임에러 발생 : null을 캐스팅할 수 없기 때문
+    val obj11: Sub23? = obj9 as? Sub23 // null 대입 시 null 이 반환된다.
+
+
+
+    /*
+    * 접근제한자 :
+    *   - public
+    *   - private
+    *   - internal : 같은 모듈 내에서만 접근 가능
+    *           IntelliJ / maven / gradle ...
+    *   - protected
+    *   */
+
+
+    /*
+    *
+    * 접근제한자를 get(), set() 에서 다르게 사용 하고자 하는 경우
+    *   - get() 함수의 접근 제한자는  프로퍼티의 접근 제한자와 항상 같다.
+    *   - set() 함수의 접근 제한자는 프로퍼티의 접근 제한자와 다르게 설정할 수는 있으나, 접근 범위를 넓혀서 설정할 수는 없다.*/
+
     fun callClass() {
 
         val shape1 = Shape()
@@ -179,6 +226,11 @@ class Chap09 : AppCompatActivity() {
         circle.y = 30
         circle.r = 5
         circle.print()
+
+        val obj3: Super3 = Sub13()
+        val obj4: Sub13 = obj3 as Sub13
+        obj4.superFun()
+        obj4.subFun1()
 
     }
 }

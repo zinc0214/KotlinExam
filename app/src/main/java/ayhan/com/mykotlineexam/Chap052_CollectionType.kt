@@ -11,7 +11,7 @@ import java.util.*
 
 //데이터타입 - 컬렉션타입
 
-class Chap052 : AppCompatActivity() {
+class Chap052_CollectionType : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
